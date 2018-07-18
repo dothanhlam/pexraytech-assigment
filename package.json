@@ -1,0 +1,82 @@
+{
+  "name": "pexraytech-assigment",
+  "version": "1.0.0",
+  "description": "pexraytech, assigment, react",
+  "main": "index.js",
+  "scripts": {
+    "test:watch": "npm run mocha:watch & npm run karma:watch",
+    "karma": "NODE_ENV=production karma start karma.config.js",
+    "karma:watch": "npm run karma -- --watch",
+    "api": "nodemon ./src/api/index.js",
+    "mocha": "mocha --compilers js:babel-core/register ./spec --recursive",
+    "mocha:watch": "npm run mocha -- --watch",
+    "test": "npm run mocha && npm run karma",
+    "start": "npm run api & webpack-dev-server --progress --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dothanhlam/pexraytech-assigment.git"
+  },
+  "keywords": [
+    "pexraytech"
+  ],
+  "author": "Lam Do",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dothanhlam/pexraytech-assigment/issues"
+  },
+  "homepage": "https://github.com/dothanhlam/pexraytech-assigment#readme",
+  "dependencies": {
+    "axios": "0.13.1",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "nodemon": "1.10.0",
+    "react": "15.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "15.4.1",
+    "react-pacomo": "0.5.3",
+    "react-redux": "4.4.5",
+    "react-router": "2.8.1",
+    "react-router-redux": "4.0.6",
+    "redux": "3.5.2",
+    "redux-form": "6.2.0",
+    "redux-saga": "^0.12.0",
+    "request": "^2.87.0",
+    "sourcemap": "0.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "0.23.1",
+    "node-sass": "3.8.0",
+    "sass-loader": "4.0.0",
+    "sinon": "^1.17.6",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-preset-es2015": "6.13.2",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-react-hmre": "1.1.1",
+    "babel-preset-stage-1": "6.16.0",
+    "babel-core": "6.13.2",
+    "babel-eslint": "6.1.2",
+    "babel-loader": "6.2.4",
+    "chai": "3.5.0",
+    "enzyme": "2.4.1",
+    "eslint": "3.3.1",
+    "eslint-loader": "1.5.0",
+    "eslint-plugin-react": "6.1.2",
+    "extract-text-webpack-plugin": "1.0.1",
+    "karma": "1.2.0",
+    "mocha": "3.0.2",
+    "karma-mocha": "1.1.1",
+    "karma-phantomjs-launcher": "1.0.1",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-webpack": "1.8.0",
+    "phantomjs-prebuilt": "^2.1.12",
+    "imports-loader": "^0.6.5",
+    "react-addons": "*",
+    "react-addons-test-utils": "*",
+    "redux-devtools": "3.3.1",
+    "redux-logger": "2.7.4"
+  }
+}
